@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Grades</title>
+    <link rel="stylesheet" href="finalecalc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Course Grades</h1>
+
+        <div class="input-section">
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" placeholder="Enter User Name">
+        </div>
+
+        <div class="input-section">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" placeholder="Enter User ID">
+        </div>
+
+        <div class="input-section">
+            <label for="calculationMethod">Calculation Method:</label>
+            <select id="calculationMethod">
+                <option value="percentage">Percentage-Based</option>
+                <option value="gradePoint">Grade Point-Based</option>
+            </select>
+        </div>
+
+        <button id="fetchBtn">Fetch Data</button>
+
+        <!-- Table for output data -->
+        <div class="output-section">
+            <h3>Output Data</h3>
+            <table id="outputTable">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Org ID</th>
+                        <th>Grades</th>
+                        <!-- Add more headers as needed -->
+                    </tr>
+                </thead>
+                <tbody id="outputTableBody">
+                    <!-- Data will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="finalecalc.js"></script>
+</body>
+</html>

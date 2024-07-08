@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #28313B, #485461); /* Gradient background */
+    color: #ffffff; /* Dark text color */
+    font-weight: 400; /* Normal font weight */
+    padding: 20px; /* Added padding for body */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Adjusted max-width for responsiveness */
+    padding: 10px; /* Reduced padding */
+    background: linear-gradient(360deg, #000000, #434343); /* Gradient black background */    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    text-align: center;
+    font-size: 14px; /* Reduced base font size */
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjusted gap between form elements */
+    margin-bottom: 15px; /* Reduced margin for spacing */
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%; /* Full width for input and select */
+    padding: 8px; /* Reduced padding */
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Light input background */
+    color: #000000; /* Dark text color for inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+    font-weight: 400; /* Normal font weight */
+    font-size: 14px; /* Reduced font size */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Green button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600; /* Bolder text for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    font-size: 14px; /* Reduced font size */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green hover color */
+}
+
+.output-section {
+    width: 100%;
+}
+
+#outputTable {
+    width: 100%; /* Full width for table */
+    margin-top: 20px; /* Adding margin for spacing */
+    border-radius: 8px;
+    overflow: hidden; /* Ensure rounded corners apply correctly */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    background-color: #ffffff; /* White background for table */
+    color: #000000; /* Dark text color */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+#outputTable thead {
+    background-color: #f0f0f0; /* Light gray background for header */
+}
+
+#outputTable th, #outputTable td {
+    padding: 10px; /* Padding for table cells */
+    text-align: left; /* Left-align text in cells */
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .input-section {
+        margin-bottom: 10px; /* Adjusted margin for smaller screens */
+    }
+
+    #outputTable th, #outputTable td {
+        font-size: 12px; /* Reduced font size for table on smaller screens */
+    }
+}
